@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         02. Helix ATOM Index | V7.9 V7.3 - Test Remove Dups + Unificar Fondo
+// @name         02. Helix ATOM Index | V7.9 100 - Test Remove Dups + Unificar Fondo + BackGrouds Toggle
 // @namespace    http://tampermonkey.net/
-// @version      V7.9 V7.3
-// @description  ATOM | Colorize + Blinks + ReCheck 2' + ReColorize + Optimized
+// @version      V7.9 100
+// @description  ATOM | Colorize + Blinks + ReCheck 2' + ReColorize + Optimized + Remove Dups + Unify BKGRD + BackGrouds Toggle
 // @match        https://atomgencat.onbmc.com/*
 // @run-at       document-end
 // @grant        none
@@ -17,7 +17,8 @@
     //-------------------------------------------------------------
     const CONFIG = {
         fondoEstados: true,
-        parpadeoEstados: true // permite parpadeo en Assigned/In Progress/2-High y Usuarios si aplica
+        parpadeoEstados: true, // permite parpadeo en Assigned/In Progress/2-High y Usuarios si aplica
+        fondoConBordes: false // cambiar a false si quieres quitar padding y border-radius
     };
 
     const usuariosBlink = [				// Nombres en Minúscula
@@ -141,18 +142,19 @@
     //-------------------------------------------------------------
     // 							Status
     //-------------------------------------------------------------
-/*     //------------------- Texto Color Fondo NO -------------------------
+    //------------------- Texto Color Fondo NO -------------------------
 
+        /*{ texto: 'Assigned', color: 'white', fondo: '#0078d4', padding: '7px 37px', borderRadius: '7px' },//  Códgo pinta fondo in pastilla || // #fcccc */
         { texto: 'Assigned', 											color: 'white', fondo: 'red'}, // #fcccc
         { texto: 'In Progress', 										color: 'Green', fondo: '#ccffcc' }, // #ccffcc
         { texto: '2-High', 												color: 'Red', 	fondo: '#NoColor' }, // #d13438
 
-*/   //------------------- Texto Blanco Fondo Color -------------------------
+/*   //------------------- Texto Blanco Fondo Color -------------------------
         { texto: 'Assigned', 											color: 'white', 	fondo: '#0078d4' }, // #fcccc
         { texto: 'In Progress', 										color: 'Green', 	fondo: '#ccffcc' }, // #ccffcc
         { texto: '2-High', 												color: 'white', 	fondo: '#d13438' },
 
-    //----------------------------------------------------------------------
+*/    //----------------------------------------------------------------------
         { texto: 'Reopen', 												color: 'black' },
         { texto: '3-Medium', 											color: 'Orange' },
         { texto: 'Pending', 											color: 'orange' },
@@ -205,30 +207,22 @@
                 // construir estilo base (sin padding)
                 let estilos = `color:${r.color}; white-space:nowrap; line-height:inherit; display:inline;`;
 
-                if (CONFIG.fondoEstados && r.fondo) { estilos += `background:${r.fondo}; box-decoration-break:clone; -webkit-box-decoration-break:clone; padding:1px 3px; border-radius:3px;`; }
-
-                /*
                 if (CONFIG.fondoEstados && r.fondo) {
-                    estilos += `
-                        background:${r.fondo}; box-decoration-break:clone; -webkit-box-decoration-break:clone;
-                    `;
-*/
+                    // Fondo estable y padding/border opcional
+                    estilos += `background:${r.fondo}; box-decoration-break:clone; -webkit-box-decoration-break:clone;`;
+                    if (CONFIG.fondoConBordes) estilos += ` padding:2px 3px;`;
 
-
-             // Si es usuario con parpadeo condicional
-                if (usuariosBlink.includes(r.texto.toLowerCase())) {
-                    const clase = (CONFIG.parpadeoEstados && filaTieneEstado) ? "Lx-blink" : "Lx-noblink";
-                    return `<span class="${clase}" style="${estilos}">${match}</span>`;
+                    // Aire visual alrededor del texto usando padding lateral seguro
+                    estilos += ` display:inline-block; position:relative;`;
+                    estilos += ` padding-left:2.5px; padding-right:2.5px;; border-radius:2.5px;`;
                 }
 
-                // Si es estado con parpadeo
-                if (CONFIG.parpadeoEstados && (
-                    r.texto.toLowerCase() === "assigned" ||
-                    r.texto.toLowerCase() === "2-high" ||
-                    r.texto.toLowerCase() === "in progress"
-                )) {
+                // Parpadeo
+                const estado = (r.texto || "").toLowerCase();
+                if (CONFIG.parpadeoEstados && (estado === "assigned" || estado === "2-high" || estado.includes("in progress"))) {
                     estilos += ` animation: helixBlink 1.2s infinite;`;
                 }
+
 
                 return `<span style="${estilos}">${match}</span>`;
             });
@@ -261,8 +255,6 @@
             const filaTieneEstado = (
                 textoFila.indexOf("assigned") !== -1 ||
                 textoFila.indexOf("in progress") !== -1 ||
-                textoFila.indexOf("work in progress") !== -1 ||
-                textoFila.indexOf("implementation in progress") !== -1 ||
                 textoFila.indexOf("reopen") !== -1
             );
 
