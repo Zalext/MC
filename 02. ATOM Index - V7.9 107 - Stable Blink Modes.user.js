@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         02. Helix ATOM Index | V7.9 107 - Stable Blink Modes
+// @name         02. ATOM Index | V7.9 107 - Stable Blink Modes
 // @namespace    http://tampermonkey.net/
 // @version      V7.9 107
 // @description  ATOM | Colorize + Blink Modes FIXED
