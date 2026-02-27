@@ -1,0 +1,188 @@
+<html ml-update="aware"><head>
+<title>Work Info History</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="msapplication-config" content="none">
+<script type="text/javascript">var TIMELINE = TIMELINE || {};TIMELINE.q = [];TIMELINE.mark = function(mn, mt) { TIMELINE.q.push( ["mark", mn, mt || new Date().getTime()] ); };TIMELINE.mark("AR_FB");TIMELINE.mark("AR_MT_BEACON");</script>
+<link rel="SHORTCUT ICON" href="../../../../resources/images/bmcfavicon.ico"><script type="text/javascript" src="../../../../resources/javascript/25.4.01 202511061449/boomerang.js" defer=""></script>
+<script type="text/javascript" src="../../../../resources/javascript/25.4.01 202511061449/bootstrap.js"></script>
+<script type="text/javascript" src="/arsys/_auth/resource/js/idle-timeout.js"></script>
+<script type="text/javascript">var loaded=0;var mainWinID=0;function ScriptLoaded() {if (TIMELINE.enabled() ){TIMELINE.init("HPD:Help Desk Dialogs");TIMELINE.mark("AR_ONLOAD");}++loaded;if(loaded==1)ARSystemInit(mainWinID,"onbmc-s","HPD:Help Desk Dialogs","Work Info History View",null,null,null);var opnWnd = window.opener; LOG_POLLING.AJAX_CALL_FREQ=logToFormFreq;if (opnWnd && !opnWnd.closed){opnWnd.isFrmLoaded=true};}var RelContextPath='../../../../',AbsContextPath=null; var myCacheID='765c8d8c'; var myFlagForInline=false;</script>
+<script type="text/javascript">document.writeln("\x3clink rel=\"stylesheet\" href=\"..\/..\/..\/..\/resources\/stylesheets\/25.4.01 202511061449\/" + ARMTGetBrowserTypeString() + "\/ARSystem.css\"\x3e");</script><link rel="stylesheet" href="../../../../resources/stylesheets/25.4.01 202511061449/chr/ARSystem.css">
+
+<link rel="stylesheet" type="text/css" href="../../../../resources/javascript/25.4.01 202511061449/YUI/skins/sam/resize.css">
+<link rel="stylesheet" type="text/css" href="../../../../resources/javascript/25.4.01 202511061449/JQuery/jquery.treetable.css">
+<script type="text/javascript" src="../../../../resources/javascript/25.4.01 202511061449/LocalizedMessages_ca_ES.js" defer=""></script>
+<script type="text/javascript">function DVFsf(){return"\x3cHTML\x3e\x3c/HTML\x3e";}function DVFol(){}</script>
+<script type="text/javascript" src="../../../../resources/javascript/25.4.01 202511061449/JQuery/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="../../../../resources/javascript/25.4.01 202511061449/JQuery-UI/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../../../resources/javascript/25.4.01 202511061449/DOMPurify/purify.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../../../../resources/javascript/25.4.01 202511061449/JQuery-UI/jquery-ui.min.css">
+<script type="text/javascript">document.write("\x3cscript type=\"text\/javascript\" defer src=\"..\/..\/..\/..\/resources\/javascript" + ARMTGetBrowserVersionString() + "\/25.4.01 202511061449\/" + ARMTGetBrowserTypeString() + "\/ClientCore.js\"\x3e\x3c\/script\x3e");</script><script type="text/javascript" defer="" src="../../../../resources/javascript/25.4.01 202511061449/chr/ClientCore.js"></script>
+<script type="text/javascript" src="../../../../resources/javascript/25.4.01 202511061449/ckeditor/ckeditor.js" defer=""></script>
+<script type="text/javascript" src="../../../../resources/javascript/25.4.01 202511061449/JQuery/jquery.treetable.min.js" defer=""></script>
+<script type="text/javascript">document.write('\x3cscript src="../../../../forms/onbmc-s/25.4.01 202511061449/uds.js?'+encodeURIComponent(getCookie("MJUID"))+'"\x3e\x3c/script\x3e\x3cscript charset="utf-8" src="udd.js?ui='+encodeURIComponent(getCookie("MJUID"))+'&w=6F6E626D632D734850443A48656C70204465736B204469616C6F6773'+encodeURIComponent(name)+'"\x3e\x3c/script\x3e');</script><script src="../../../../forms/onbmc-s/25.4.01 202511061449/uds.js?1133348005"></script><script charset="utf-8" src="udd.js?ui=1133348005&amp;w=6F6E626D632D734850443A48656C70204465736B204469616C6F67731772205819397D"></script>
+<script type="text/javascript" src="form.js/765c8d8c.js?format=html" defer=""></script>
+<style>.cke{visibility:hidden;}</style><style>
+    .DIVPopup,
+    .DIVPopup *,
+    .DIVPopupBody,
+    .DIVPopupBody * {
+        background-color: #2b2b2b !important;
+    }
+</style><script type="text/javascript" language="JavaScript" src="../../../../resources/javascript/25.4.01 202511061449/chr/AnimMgr.js"></script><script type="text/javascript" language="JavaScript"></script></head>
+<body onload="ScriptLoaded()" draghandler="BodyDrag" class="yui-skin-sam" style="background:none;">
+<script type="text/javascript">var hssoIdleLogoutCalled=false;
+function performLogoutSteps() {
+hssoIdleLogoutCalled=true;
+var fetcher = GET_XML_HTTP();
+fetcher.open("GET", AbsContextPath + "servlet/HssoIdleTimeoutSessCleanupServlet?sToken=" + window.sTok, false);
+fetcher.setRequestHeader("Content-type", "text/plain; charset=UTF-8");
+try {
+fetcher.send(null);
+} catch (e) {}
+}
+if (window.ssoTimeoutAPI !== undefined){
+(function() {
+let iframeHasFocus = false;
+function keepAliveHssoCallback() {
+return Promise.resolve(iframeHasFocus);
+}
+function updateIframeFocusFlag() {
+let iframes = document.querySelectorAll("iframe");
+iframeHasFocus = Array.from(iframes).some(frame => frame === document.activeElement);
+}
+setInterval(updateIframeFocusFlag, 50000);
+window.ssoTimeoutAPI.configure({validationDomain:"/arsys", logoutCallback:performLogoutSteps, appLocale:"ca-ES", keepAliveCallback:keepAliveHssoCallback});
+})();
+}
+</script>
+<iframe height="1" width="1" id="pinghtml" name="pingIframe" src="../../../../resources/html/ping.html">
+</iframe>
+<table id="bubble_tooltip" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr class="bubble_top">
+<td>
+</td>
+</tr>
+<tr class="bubble_middle">
+<td>
+<div id="bubble_tooltip_content">
+</div>
+</td>
+</tr>
+<tr id="bubble_tooltip_bottom" class="bubble_bottom_ori">
+<td colspan="5">
+</td>
+</tr>
+</tbody></table>
+<div id="FormApp" arindex="FormApp" class="FormApp" style=""><div id="Toolbar" arindex="Toolbar" class="ToolBar" style="visibility: hidden;"><div class="TBTopBarStatus">Current mode: <span class="TBTopBarStatusMode"></span></div><a class="btn TBTopBarBox" href="javascript:"><img class="tbright" src="../../../../resources/images/mt_sprites.gif" alt="Show toolbar"><img class="tbdown" src="../../../../resources/images/mt_sprites.gif" alt="Hide toolbar"></a><table cellpadding="0" cellspacing="0" class="Toolbar"><tbody><tr><td nowrap="" class="TBGroup TBGroup0">
+<a class="searchsavechanges btn btn3d tbbtn" href="javascript:" style="position: static; visibility: inherit;">
+<div id="TBsearchsavechanges">Save</div>
+</a>
+</td>
+<td nowrap="" class="TBGroup TBGroup1">
+<a class="newsearch btn btn3d tbbtn btnd" href="javascript:" style="position:static">
+<div id="TBnewsearch"><img src="../../../../resources/images/mt_sprites.gif" alt="New search"></div>
+<span>
+ New search</span>
+</a>
+<a class="newrequest btn btn3d tbbtn btnd" href="javascript:" style="position:static">
+<div id="TBnewrequest"><img src="../../../../resources/images/mt_sprites.gif" alt="New request"></div>
+<span>
+ New request</span>
+</a>
+<a class="modifyall btn btn3d tbbtn btnd" href="javascript:" style="position:static">
+<div id="TBmodifyall"><img src="../../../../resources/images/mt_sprites.gif" alt="Modify all"></div>
+<span>
+ Modify all</span>
+</a>
+</td>
+<td nowrap="" class="TBGroup TBGroup2">
+<a class="savedsearches btn btn3d tbbtn" href="javascript:" style="position:static">
+<div id="TBsavedsearches"> Searches</div>
+</a>
+<a class="quickreports btn btn3d tbbtn" href="javascript:" style="position:static">
+<div id="TBquickreports">My Reports</div>
+</a>
+<a class="advancedsearch btn btn3d tbbtn btnd" href="javascript:" style="position:static">
+<div id="TBadvancedsearch">Advanced search</div>
+</a>
+<a class="clear btn btn3d tbbtn" href="javascript:" style="position:static">
+<div id="TBclear">Clear</div>
+</a>
+<a class="settodefaults btn btn3d tbbtn btnd" href="javascript:" style="position:static">
+<div id="TBsettodefaults">Set to defaults</div>
+</a>
+</td>
+<td nowrap="" class="TBGroup TBGroup3">
+<a class="logout btn btn3d tbbtn" href="javascript:" style="position:static">
+<div id="TBlogout">Logout</div>
+</a>
+<a class="home btn btn3d tbbtn" href="javascript:" style="position:static">
+<div id="TBhome">Home</div>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="PromptBar" arindex="PromptBar" class="promptbarc" arwindowid="0" style="left: 100000px;"><table class="prompttable" id="pbartable"><tbody>
+</tbody></table></div>
+<div id="ResultsList" arindex="ResultsList" arwindowid="0" style="left: 100000px;">
+<div id="WIN_0_1020" arid="1020" artype="Table" ardbn="CustomResultsList" class="arfid1020 ardbnCustomResultsList" style="top:0px; left:0px; width:0px; height:0px;visibility:hidden;z-index:0;" arcolcheck="0" arcols="" arcolws="" arcoldlen="" arcolhdrtxtcol="null" ardrill="1" arserver="@" arschema="@" armaxrows="0" ardtype="1" arcsize="0" arfixhdr="1" arselrows="0" arselinit="0" arselrefresh="0" arautofit="0" archunkbuttons="1" arsort="" argroup="" arfunc="" arqual="{qual:&quot;&quot;, ids:[],extids:[]}" arwindowid="0" arrepstr="Report" arselallstr="Select All" ardeselallstr="DeSelect All" arrefstr="Refresh" arprefsstr="Preferences" arentretstr="{2} of {3} results"><img src="../../../../resources/images/arrow-down-white.gif" alt="" class="TableSortImgUp" arindom="1"><img src="../../../../resources/images/arrow-up-white.gif" alt="" class="TableSortImgDown" arindom="1"><div class="TableHdr" style="visibility:hidden"><table class="TableHdr" cellpadding="0" cellspacing="0"><tbody><tr><td class="TableHdrChunk" nowrap=""><div class="TableHdrChunk" style="top:0px;left:0px;width:100%;height:19px;position:relative"><a href="javascript:" class="btn chunkleft" style="top:0px; left:10px; width:18px; height:18px;"><img class="btnimg" src="../../../../resources/images/chunking_sprite.png" alt="Click to move to the previous page in table null" title="Previous Chunk"></a><div class="TableChunkDiv" style="top:0px;left:33px;width:78px;height:17px;visibility:inherit;"><input type="text" style="position:absolute;top:0px;left:0px;width:61px;height:17px;margin:0px; border-top: 1px solid black; border-left: 1px solid black;text-align:right;" readonly=""><a href="javascript:" class="btn btn3d " style="top:0px; left:60px; width:18px; height:17px;"><img class="btnimg" src="../../../../resources/images/menu_down.gif" style="top:6px; left:4px; width:7px; height:4px;" alt="Click to show a menu to choose a record set displayed in table null" title=""></a></div><a href="javascript:" class="btn chunkright" style="top:0px; left:116px; width:18px; height:18px;"><img class="btnimg" src="../../../../resources/images/chunking_sprite.png" alt="Click to move to the next page in table null" title="Next Chunk"></a></div></td><td nowrap="" valign="middle" class="TableHdrL"></td><td nowrap="" valign="middle" class="TableHdrR"></td></tr></tbody></table></div><div class="TableInner"></div><div class="TableFtr" style="visibility:hidden"><table class="TableFtr" cellpadding="0" cellspacing="0"><tbody><tr><td nowrap="" valign="middle" class="TableFtrL"></td><td nowrap="" valign="middle" class="TableFtrR"></td></tr></tbody></table></div></div>
+</div>
+<div id="Splitter" arindex="Splitter" draggable="1" dragoriginal="1" dragrl="1" arwindowid="0" style="left: 100000px;">
+</div>
+<div id="FormContainer" arindex="FormContainer" tabindex="0" arcs="1" arfillstyle="0" style="background-color: rgb(212, 223, 229); height: 212px; top: 0px; overflow: auto;" arcolor="#d4dfe5" arwindowid="0">
+<div class="FormContainerBackground" arbkimgx="715" arbkimgy="598" style="width: 714px; height: 598px; background-image: url(&quot;../../../../imagepool/SHR%3ASHR%3AAAS_WorkInfo_536872170_1052585693%21onbmc-s?cid=1772045802000&quot;); background-position: left top; background-repeat: no-repeat;">
+</div>
+<div style="top:0;left:0;width:715;height:598">&nbsp;</div>
+<div id="WIN_0_303544400" arid="303544400" artype="Trim" arsubtype="3" ardbn="z5Text_Primary_Information3" arcolor="#dee0e0" class="TitleBarStyle arfid303544400 ardbnz5Text_Primary_Information3 trimdiv" style="z-index:996;top:36px; left:6px; width:695px; height:23px;background-color:#dee0e0;" arwindowid="0">
+<table style="top:0px; left:0px; width:695px; height:23px;" class="trimTable" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td valign="middle" artcolor="#003366" style="color:#003366;" class="f4 trimJustl">&nbsp;&nbsp;Work&nbsp;Info&nbsp;History</td>
+</tr>
+</tbody></table>
+</div>
+<a href="javascript:" id="WIN_0_301342200" arid="301342200" artype="Control" ardbn="z3Btn_Close" artcolor="null" class="btn btn3d arfid301342200 ardbnz3Btn_Close" style="top:557px; left:11px; width:46px; height:21px;z-index:998;" arwindowid="0" tabindex="0"><div class="btntextdiv" style="top:0px; left:0px; width:46px; height:21px;"><div class="f1" style=";width:46px">Close</div>
+</div>
+</a>
+<a href="javascript:" id="WIN_0_300603300" arid="300603300" artype="Control" ardbn="Help" artcolor="#fffbf0" class="btn btnurl ActionToolbarStyle arfid300603300 ardbnHelp" style="top:1px; left:664px; width:30px; height:19px;color:#fffbf0;z-index:999;background-color:transparent;" arwindowid="0"><div class="btntextdiv" style="top:0px; left:0px; width:30px; height:19px;"><div class="f9" style="text-align: left; width: 30px; text-decoration: underline;">Help</div>
+</div>
+</a>
+<a href="javascript:" id="WIN_0_301674700" arid="301674700" artype="Control" ardbn="z3Btn_ActionToolbar" artcolor="null" class="btnflt  pointerCursor arfid301674700 ardbnz3Btn_ActionToolbar" style="top:1px; left:649px; width:55px; height:22px;z-index:994;" arwindowid="0"><div class="btnimgdiv" style="top:0px; left:0px; width:55px; height:22px;">
+<img src="../../../../imagepool/SHR%3ASHR%3ARAC_Config_Console_z3Btn_ActionToolbar_3694604992%21onbmc-s?cid=1772045802000" id="reg_img_301674700" aralttxt="0" artxt="" arimgcenter="1" alt="" title="" class="btnimg" style="top:0px; left:0px; width:55px; height:22px;">
+</div>
+</a>
+<div id="WIN_0_500170800" arid="500170800" artype="Trim" arsubtype="2" ardbn="Box" arcolor="#ffffff" class="arfid500170800 ardbnBox bs4 trimBox" style="z-index:995;top:34px; left:4px; width:700px; height:550px;background-color:#ffffff;border-width:2px;" arwindowid="0">
+</div>
+<div id="WIN_0_303714400" arid="303714400" artype="Char" ardbn="z1D_WorkInfoToolTip_Info" arlbox="0,4,3,472" class="df  dfro arfid303714400 ardbnz1D_WorkInfoToolTip_Info Char" style="z-index:1000;top:70px; left:10px; width:681px; height:476px;" arwindowid="0">
+<label id="label303714400" class="label f1 do" for="arid_WIN_0_303714400" style="top:4px; left:0px; width:3px; height:472px;"></label><textarea class="text " wrap="soft" id="arid_WIN_0_303714400" cols="20" maxlen="0" style="top: 0px; left: 8px; width: 647px; height: 476px; background-color: rgb(204, 204, 204); color: rgb(224, 224, 224);" readonly="" arautocak="0" arautoctt="400" arencryptdataatrest="0" rows="36"></textarea>
+<a href="javascript:" class="btn btn3d expand" style="top:0px; left:660px; width:21px; height:21px;">
+<img class="btnimg" src="../../../../resources/images/mt_sprites.gif" alt="ReadOnly editor for z1D_WorkInfoToolTip_Info" title="">
+</a>
+</div>
+<div id="WIN_0_301686100" arid="301686100" artype="Trim" arsubtype="2" ardbn="z5Box_ContentFooterBar" arcolor="#dee0e0" arbcolor="#dee0e0" class="arfid301686100 ardbnz5Box_ContentFooterBar bs0 trimBox" style="z-index:997;top:555px; left:6px; width:695px; height:27px;background-color:#dee0e0;border-color:#dee0e0;border-width:1px;" arwindowid="0">
+</div>
+</div>
+<div id="QueryBar" arindex="QueryBar" class="AdvancedSearchBar" arid="1005" artype="SearchBar" arwindowid="0" style="left: 100000px; visibility: hidden;">
+<label class="hidden" style="left:0;top:0;" for="arid1005">Advanced Search Bar</label>
+<table class="SearchBarOperators" width="100%"><tbody><tr height="20"><td>&nbsp;</td><td class="SearchBarButtonCell"><a href="javascript:" style="text-align:center;position:static;width:28px;height:19px;padding-top:1px" class="btn btn3d">(</a></td><td class="SearchBarButtonCell"><a href="javascript:" style="text-align:center;position:static;width:28px;height:19px;padding-top:1px" class="btn btn3d">)</a></td><td class="SearchBarButtonCell"><a href="javascript:" style="text-align:center;position:static;width:28px;height:19px;padding-top:1px" class="btn btn3d">"</a></td><td>&nbsp;</td><td class="SearchBarButtonCell"><a href="javascript:" style="text-align:center;position:static;width:28px;height:19px;padding-top:1px" class="btn btn3d">+</a></td><td class="SearchBarButtonCell"><a href="javascript:" style="text-align:center;position:static;width:28px;height:19px;padding-top:1px" class="btn btn3d">-</a></td><td class="SearchBarButtonCell"><a href="javascript:" style="text-align:center;position:static;width:28px;height:19px;padding-top:1px" class="btn btn3d">*</a></td><td class="SearchBarButtonCell"><a href="javascript:" style="text-align:center;position:static;width:28px;height:19px;padding-top:1px" class="btn btn3d">/</a></td><td class="SearchBarButtonCell"><a href="javascript:" style="text-align:center;position:static;width:28px;height:19px;padding-top:1px" class="btn btn3d">%</a></td><td>&nbsp;</td><td class="SearchBarButtonCell"><a href="javascript:" style="text-align:center;position:static;width:28px;height:19px;padding-top:1px" class="btn btn3d">=</a></td><td class="SearchBarButtonCell"><a href="javascript:" style="text-align:center;position:static;width:28px;height:19px;padding-top:1px" class="btn btn3d">!=</a></td><td class="SearchBarButtonCell"><a href="javascript:" style="text-align:center;position:static;width:28px;height:19px;padding-top:1px" class="btn btn3d">&lt;</a></td><td class="SearchBarButtonCell"><a href="javascript:" style="text-align:center;position:static;width:28px;height:19px;padding-top:1px" class="btn btn3d">&gt;</a></td><td class="SearchBarButtonCell"><a href="javascript:" style="text-align:center;position:static;width:28px;height:19px;padding-top:1px" class="btn btn3d">&lt;=</a></td><td class="SearchBarButtonCell"><a href="javascript:" style="text-align:center;position:static;width:28px;height:19px;padding-top:1px" class="btn btn3d">&gt;=</a></td><td class="SearchBarButtonCell"><a href="javascript:" style="text-align:center;position:static;width:28px;height:19px;padding-top:1px" class="btn btn3d">LIKE</a></td><td>&nbsp;</td><td class="SearchBarButtonCell"><a href="javascript:" style="text-align:center;position:static;width:28px;height:19px;padding-top:1px" class="btn btn3d">AND</a></td><td class="SearchBarButtonCell"><a href="javascript:" style="text-align:center;position:static;width:28px;height:19px;padding-top:1px" class="btn btn3d">OR</a></td><td class="SearchBarButtonCell"><a href="javascript:" style="text-align:center;position:static;width:28px;height:19px;padding-top:1px" class="btn btn3d">NOT</a></td><td>&nbsp;</td></tr></tbody></table><table class="SearchBarInput" width="100%"><tbody><tr><td width=""><textarea style="width:99%;height:21px;" class="sr" cols="" wrap="off" rows="1" id="arid1005"></textarea></td><td width="70"><a href="javascript:" style="position:static;height:19px;width:70px;text-align:center" class="btn btn3d menu">Fields&nbsp;<img style="border:none" alt="" src="../../../../resources/images/menu_down.gif"></a></td></tr></tbody></table></div>
+<div id="rti" class="rti" style="right:-9999px;display:none;"></div>
+<input id="ARState" arindex="ARState" type="text" style="visibility:hidden"><div id="artooltip" style="top:0; visibility:hidden;">
+</div>
+<div id="dndproxy" style="top:0; visibility:hidden;">
+<img id="dndproxyValidImgSingle" style="vertical-align:middle" src="../../../../resources/images/DragDrop-Valid-single.gif">
+<img id="dndproxyInvalidImgSingle" style="vertical-align:middle" src="../../../../resources/images/DragDrop-NotValid-single.gif">
+<img id="dndproxyValidImgMultiple" style="vertical-align:middle" src="../../../../resources/images/DragDrop-Valid-multiple.gif">
+<img id="dndproxyInvalidImgMultiple" style="vertical-align:middle" src="../../../../resources/images/DragDrop-NotValid-multiple.gif">
+<span id="dndproxylabel" style="vertical-align:middle">
+</span>
+</div>
+<textarea style="visibility: hidden; z-index: 1; position: absolute; top: -9999px; left: -9999px;" id="rtf_editor"></textarea>
+</div><div id="ardialogfp" class="DialogFloatHide">
+</div>
+<script type="text/javascript">var ReportSelForm="ReportSelection";var ReportConsoleForm="AR System Report Console";</script>
+
+
+<div class="__selection-popup-container__" style="display: none;"><ul class="single-liner"><li data-is-command="false" data-action="https://duckduckgo.com/?q=%s">Search</li><li data-is-command="true" data-action="copy">Copy</li></ul></div></body></html>
